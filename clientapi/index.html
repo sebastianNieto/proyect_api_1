@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./client.css">
+    <title>Cliente api</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="content">
+            <div class="title">
+                <h1>Play Api</h1>
+            </div>
+            <div class="content-body">
+                <div class="center">
+                    <div style="margin-bottom: 10px;">
+                        <input type="number" placeholder="Ingrese código del producto" id="input-filter">
+                        <button class="button-load" data-param="1">Buscar</button>
+                    </div>
+                    <button class="button-load">Cargar todos los datos</button>
+                    <p id='loading'></p>
+                </div>
+
+                <div class="message" id="message">
+                    No se ha cargado ningún dato
+                </div>
+                <table class="hidden">
+                    <caption>Lista de videojuegos</caption>
+                    <thead>
+                        <th>Código</th>
+                        <th>Descripción</th>
+                        <th>Marca</th>
+                        <th>Precio</th>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" style="text-align: left;">Total:</td>
+                            <td id='td-total'></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </section>
+    <script src="./client.js"></script>
+</body>
+
+</html>
